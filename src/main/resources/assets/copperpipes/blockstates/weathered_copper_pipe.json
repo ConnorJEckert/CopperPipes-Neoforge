@@ -337,7 +337,7 @@
     },
     {
       "when": {
-        "locked": "true"
+        "AND": [{"locked": "true"}, {"facing": "south"}]
       },
       "apply": {
         "model": "copperpipes:block/pipe_brace_center"
@@ -345,10 +345,46 @@
     },
     {
       "when": {
-        "locked": "true"
+        "AND": [{"locked": "true"}, {"facing": "north"}]
       },
       "apply": {
         "model": "copperpipes:block/pipe_brace_center"
+      }
+    },
+    {
+      "when": {
+        "AND": [{"locked": "true"}, {"facing": "east"}]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "AND": [{"locked": "true"}, {"facing": "west"}]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "AND": [{"locked": "true"}, {"facing": "up"}]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "AND": [{"locked": "true"}, {"facing": "down"}]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center",
+        "x": 90
       }
     },
     {
