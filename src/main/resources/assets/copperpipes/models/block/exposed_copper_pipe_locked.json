@@ -1,0 +1,8 @@
+{
+  "parent": "copperpipes:block/copper_pipe",
+  "textures": {
+    "side":     "copperpipes:block/pipe_oxidation2_fitting",
+    "end":      "copperpipes:block/hole_oxidation2",
+    "particle": "copperpipes:block/pipe_oxidation2_fitting"
+  }
+}

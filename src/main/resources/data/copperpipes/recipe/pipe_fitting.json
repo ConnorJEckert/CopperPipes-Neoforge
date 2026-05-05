@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C ",
+    "CC"
+  ],
+  "key": {
+    "C": { "item": "minecraft:copper_ingot" }
+  },
+  "result": {
+    "id": "copperpipes:pipe_fitting",
+    "count": 4
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "textures": {
+    "arrow": "copperpipes:block/copper_pipe_arrow"
+  },
+  "elements": [
+    {
+      "from": [
+        5.5,
+        10.5,
+        10.5
+      ],
+      "to": [
+        10.5,
+        10.52,
+        14.0
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#arrow"
+        }
+      }
+    },
+    {
+      "from": [
+        10.5,
+        5.5,
+        10.5
+      ],
+      "to": [
+        10.52,
+        10.5,
+        14.0
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#arrow",
+          "rotation": 90
+        }
+      }
+    },
+    {
+      "from": [
+        5.48,
+        5.5,
+        10.5
+      ],
+      "to": [
+        5.5,
+        10.5,
+        14.0
+      ],
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#arrow",
+          "rotation": 270
+        }
+      }
+    }
+  ]
+}

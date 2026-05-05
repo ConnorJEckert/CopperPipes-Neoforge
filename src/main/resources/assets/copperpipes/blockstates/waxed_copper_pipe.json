@@ -1,0 +1,408 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "copperpipes:block/pipe_core"
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "south"
+          },
+          {
+            "south": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south"
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "north"
+          },
+          {
+            "north": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "east"
+          },
+          {
+            "east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "west"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "up"
+          },
+          {
+            "up": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "down"
+          },
+          {
+            "down": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "south"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "east": "false"
+          },
+          {
+            "west": "false"
+          },
+          {
+            "up": "false"
+          },
+          {
+            "down": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "north"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "east": "false"
+          },
+          {
+            "west": "false"
+          },
+          {
+            "up": "false"
+          },
+          {
+            "down": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south"
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "east"
+          },
+          {
+            "west": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "up": "false"
+          },
+          {
+            "down": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "west"
+          },
+          {
+            "east": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "up": "false"
+          },
+          {
+            "down": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "up"
+          },
+          {
+            "down": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "east": "false"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "facing": "down"
+          },
+          {
+            "up": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "east": "false"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arm_south",
+        "x": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "locked": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center"
+      }
+    },
+    {
+      "when": {
+        "locked": "true"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_brace_center"
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": {
+        "model": "copperpipes:block/pipe_arrow_south",
+        "x": 270
+      }
+    }
+  ]
+}

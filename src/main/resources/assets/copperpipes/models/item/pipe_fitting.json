@@ -1,0 +1,52 @@
+{
+  "textures": {
+    "brace":    "copperpipes:block/copper_pipe_brace",
+    "pipe":     "copperpipes:block/copper_pipe_body",
+    "particle": "copperpipes:block/copper_pipe_brace"
+  },
+  "elements": [
+    {
+      "from": [4, 6, 4],
+      "to":   [12, 10, 12],
+      "faces": {
+        "north": { "uv": [4, 6, 12, 10], "texture": "#pipe" },
+        "south": { "uv": [4, 6, 12, 10], "texture": "#pipe" },
+        "east":  { "uv": [4, 6, 12, 10], "texture": "#pipe" },
+        "west":  { "uv": [4, 6, 12, 10], "texture": "#pipe" },
+        "up":    { "uv": [4, 4, 12, 12], "texture": "#pipe" },
+        "down":  { "uv": [4, 4, 12, 12], "texture": "#pipe" }
+      }
+    },
+    {
+      "from": [3.5, 5.5, 5.5],
+      "to":   [12.5, 10.5, 6.5],
+      "faces": {
+        "north": { "uv": [3, 5, 13, 11],  "texture": "#brace" },
+        "south": { "uv": [3, 5, 13, 11],  "texture": "#brace" },
+        "east":  { "uv": [0, 5, 1, 11],   "texture": "#brace" },
+        "west":  { "uv": [0, 5, 1, 11],   "texture": "#brace" },
+        "up":    { "uv": [3, 0, 13, 1],   "texture": "#brace" },
+        "down":  { "uv": [3, 0, 13, 1],   "texture": "#brace" }
+      }
+    },
+    {
+      "from": [3.5, 5.5, 9.5],
+      "to":   [12.5, 10.5, 10.5],
+      "faces": {
+        "north": { "uv": [3, 5, 13, 11],  "texture": "#brace" },
+        "south": { "uv": [3, 5, 13, 11],  "texture": "#brace" },
+        "east":  { "uv": [0, 5, 1, 11],   "texture": "#brace" },
+        "west":  { "uv": [0, 5, 1, 11],   "texture": "#brace" },
+        "up":    { "uv": [3, 0, 13, 1],   "texture": "#brace" },
+        "down":  { "uv": [3, 0, 13, 1],   "texture": "#brace" }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": { "rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.375, 0.375, 0.375] },
+    "firstperson_righthand": { "rotation": [0, 45, 0], "scale": [0.4, 0.4, 0.4] },
+    "gui":    { "rotation": [30, 225, 0], "scale": [0.625, 0.625, 0.625] },
+    "ground": { "translation": [0, 3, 0], "scale": [0.25, 0.25, 0.25] },
+    "fixed":  { "scale": [0.5, 0.5, 0.5] }
+  }
+}

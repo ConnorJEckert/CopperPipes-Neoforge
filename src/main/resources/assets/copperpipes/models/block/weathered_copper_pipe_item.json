@@ -1,0 +1,6 @@
+{
+  "parent": "copperpipes:block/copper_pipe_item",
+  "textures": {
+    "pipe": "copperpipes:block/weathered_copper_pipe_body"
+  }
+}

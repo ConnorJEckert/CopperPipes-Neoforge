@@ -1,0 +1,14 @@
+{
+  "itemGroup.copperpipes": "Simple Copper Pipes",
+  "item.copperpipes.copper_wrench": "Copper Wrench",
+  "item.copperpipes.pipe_fitting": "Pipe Fitting",
+
+  "block.copperpipes.copper_pipe":                   "Copper Pipe",
+  "block.copperpipes.exposed_copper_pipe":            "Exposed Copper Pipe",
+  "block.copperpipes.weathered_copper_pipe":          "Weathered Copper Pipe",
+  "block.copperpipes.oxidized_copper_pipe":           "Oxidized Copper Pipe",
+  "block.copperpipes.waxed_copper_pipe":              "Waxed Copper Pipe",
+  "block.copperpipes.waxed_exposed_copper_pipe":      "Waxed Exposed Copper Pipe",
+  "block.copperpipes.waxed_weathered_copper_pipe":    "Waxed Weathered Copper Pipe",
+  "block.copperpipes.waxed_oxidized_copper_pipe":     "Waxed Oxidized Copper Pipe"
+}
