@@ -28,6 +28,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.neoforge.capabilities.Capabilities;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -108,11 +109,19 @@ public class CopperPipeBlock extends BaseEntityBlock {
             LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         if (state.getValue(LOCKED)) return state;
         boolean connected = neighborState.getBlock() instanceof CopperPipeBlock;
+        if (!connected && level instanceof Level fullLevel) {
+            connected = fullLevel.getCapability(Capabilities.ItemHandler.BLOCK, neighborPos, direction.getOpposite()) != null;
+        }
         return state.setValue(dirProp(direction), connected);
     }
 
     static boolean connectsTo(LevelAccessor level, BlockPos pos, Direction dir) {
-        return isUnlockedPipe(level.getBlockState(pos.relative(dir)));
+        BlockPos neighborPos = pos.relative(dir);
+        if (isUnlockedPipe(level.getBlockState(neighborPos))) return true;
+        if (level instanceof Level fullLevel) {
+            return fullLevel.getCapability(Capabilities.ItemHandler.BLOCK, neighborPos, dir.getOpposite()) != null;
+        }
+        return false;
     }
 
     private static boolean isUnlockedPipe(BlockState s) {

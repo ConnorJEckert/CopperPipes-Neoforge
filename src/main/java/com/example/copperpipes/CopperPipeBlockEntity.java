@@ -155,7 +155,7 @@ public class CopperPipeBlockEntity extends BlockEntity implements GameEventListe
         }
 
         if (be.itemHandler.getStackInSlot(0).isEmpty()) {
-            if (be.pullItem(level, pos, outputDir)) {
+            if (be.pullItem(level, pos, state, outputDir)) {
                 be.transferCooldown = TRANSFER_COOLDOWN;
             }
         }
@@ -359,9 +359,14 @@ public class CopperPipeBlockEntity extends BlockEntity implements GameEventListe
         return false;
     }
 
-    private boolean pullItem(Level level, BlockPos pos, Direction outputDir) {
+    private boolean pullItem(Level level, BlockPos pos, BlockState state, Direction outputDir) {
+        boolean locked = state.getValue(CopperPipeBlock.LOCKED);
         for (Direction dir : Direction.values()) {
             if (dir == outputDir) continue;
+            // Fitted pipes only pull from faces that have an active connection arm.
+            // This handles bent pipes correctly: the arm properties record the actual
+            // configured input face(s), which may not be opposite the output.
+            if (locked && !state.getValue(CopperPipeBlock.dirProp(dir))) continue;
             BlockPos neighborPos = pos.relative(dir);
             if (level.getBlockEntity(neighborPos) instanceof CopperPipeBlockEntity) continue;
 
